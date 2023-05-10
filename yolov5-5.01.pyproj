@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{a84cf065-2ae0-4e33-b556-054042cdd21b}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>detect.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId>CondaEnv|CondaEnv|yolov5</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="data\argoverse_hd.yaml" />
+    <Content Include="data\coco.yaml" />
+    <Content Include="data\coco128.yaml" />
+    <Content Include="data\hyp.finetune.yaml" />
+    <Content Include="data\hyp.scratch.yaml" />
+    <Content Include="data\images\bus.jpg" />
+    <Content Include="data\images\zidane.jpg" />
+    <Content Include="data\orange.yaml" />
+    <Content Include="data\voc.yaml" />
+    <Content Include="models\yolov5s-orange-ca.yaml" />
+    <Content Include="models\yolov5s-orange-rc+bi+cbam.yaml" />
+    <Content Include="models\yolov5s-orange-rc+bi+ca.yaml" />
+    <Content Include="models\yolov5s-orange-bi+rc.yaml" />
+    <Content Include="models\yolov5s-orange-c+b.yaml" />
+    <Content Include="models\yolov5s-orange-bifpn.yaml" />
+    <Content Include="models\yolov5s-orange-rc2c.yaml" />
+    <Content Include="models\yolov5s-orange-rc.yaml" />
+    <Content Include="models\yolov5s-orange-asff.yaml" />
+    <Content Include="models\yolov5s-orange-cbam.yaml" />
+    <Content Include="models\yolov5s-orange-cbamold.yaml" />
+    <Content Include="models\yolov5s-orange-moresmall.yaml" />
+    <Content Include="models\yolov5s-orange-ca2.yaml" />
+    <Content Include="models\yolov5s-orange-tph.yaml" />
+    <Content Include="models\yolov5s-orange-se.yaml" />
+    <Content Include="models\yolov5s.yaml" />
+    <Content Include="requirements.txt" />
+    <Content Include="runs\detect\exp\1 %281001%29.JPG" />
+    <Content Include="runs\detect\exp\1 %281002%29.JPG" />
+    <Content Include="runs\detect\exp\1 %281003%29.JPG" />
+    <Content Include="runs\detect\exp\1 %281004%29.JPG" />
+    <Content Include="runs\detect\exp\1 %281005%29.JPG" />
+    <Content Include="runs\detect\exp\1 %281006%29.JPG" />
+    <Content Include="runs\detect\exp\1 %281007%29.JPG" />
+    <Content Include="runs\detect\exp\1 %281008%29.JPG" />
+    <Content Include="runs\detect\exp\20211211 %2820%29.JPG" />
+    <Content Include="runs\detect\exp\20211211 %2821%29.JPG" />
+    <Content Include="runs\detect\exp\20211211 %2822%29.JPG" />
+    <Content Include="runs\detect\exp\20211211 %2823%29.JPG" />
+    <Content Include="runs\detect\exp\20211211 %2859%29.JPG" />
+    <Content Include="runs\detect\exp\20211211 %2868%29.JPG" />
+    <Content Include="runs\detect\exp\20211211 %2869%29.JPG" />
+    <Content Include="runs\detect\exp\20211211 %2876%29.JPG" />
+    <Content Include="runs\detect\exp\IMG_3285.JPG" />
+    <Content Include="runs\detect\exp\IMG_3287.JPG" />
+    <Content Include="runs\detect\exp\IMG_3304.JPG" />
+    <Content Include="runs\detect\exp\IMG_3317.JPG" />
+    <Content Include="runs\detect\exp\IMG_3820.JPG" />
+    <Content Include="runs\detect\exp\IMG_3821.JPG" />
+    <Content Include="runs\detect\exp\IMG_3826.JPG" />
+    <Content Include="runs\detect\exp\IMG_3827.JPG" />
+    <Content Include="runs\detect\exp\IMG_4532.JPG" />
+    <Content Include="runs\detect\exp\IMG_4533.JPG" />
+    <Content Include="runs\detect\exp\IMG_4534.JPG" />
+    <Content Include="runs\detect\exp\IMG_4535.JPG" />
+    <Content Include="runs\detect\exp\IMG_4581.JPG" />
+    <Content Include="runs\detect\exp\IMG_4582.JPG" />
+    <Content Include="runs\detect\exp\IMG_4583.JPG" />
+    <Content Include="runs\detect\exp\IMG_4620.JPG" />
+    <Content Include="runs\train\exp\confusion_matrix.png" />
+    <Content Include="runs\train\exp\events.out.tfevents.1646398765.DESKTOP-EJQ2DUI.180404.0" />
+    <Content Include="runs\train\exp\F1_curve.png" />
+    <Content Include="runs\train\exp\hyp.yaml" />
+    <Content Include="runs\train\exp\labels.jpg" />
+    <Content Include="runs\train\exp\labels_correlogram.jpg" />
+    <Content Include="runs\train\exp\opt.yaml" />
+    <Content Include="runs\train\exp\PR_curve.png" />
+    <Content Include="runs\train\exp\P_curve.png" />
+    <Content Include="runs\train\exp\results.png" />
+    <Content Include="runs\train\exp\results.txt" />
+    <Content Include="runs\train\exp\R_curve.png" />
+    <Content Include="runs\train\exp\test_batch0_labels.jpg" />
+    <Content Include="runs\train\exp\test_batch0_pred.jpg" />
+    <Content Include="runs\train\exp\train_batch0.jpg" />
+    <Content Include="runs\train\exp\train_batch1.jpg" />
+    <Content Include="runs\train\exp\train_batch2.jpg" />
+    <Content Include="runs\train\exp\weights\best.pt" />
+    <Content Include="runs\train\exp\weights\last.pt" />
+    <Content Include="utils\google_app_engine\additional_requirements.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="detect.py" />
+    <Compile Include="hubconf.py" />
+    <Compile Include="main_gradcam.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="models\common.py" />
+    <Compile Include="models\experimental.py" />
+    <Compile Include="models\export.py" />
+    <Compile Include="models\gradcam.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="models\yolo.py" />
+    <Compile Include="models\yolov5_object_detector.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="models\__init__.py" />
+    <Compile Include="test.py" />
+    <Compile Include="train.py" />
+    <Compile Include="utils\activations.py" />
+    <Compile Include="utils\autoanchor.py" />
+    <Compile Include="utils\aws\resume.py" />
+    <Compile Include="utils\aws\__init__.py" />
+    <Compile Include="utils\datasets.py" />
+    <Compile Include="utils\general.py" />
+    <Compile Include="utils\google_utils.py" />
+    <Compile Include="utils\loss.py" />
+    <Compile Include="utils\metrics.py" />
+    <Compile Include="utils\plots.py" />
+    <Compile Include="utils\torch_utils.py" />
+    <Compile Include="utils\wandb_logging\log_dataset.py" />
+    <Compile Include="utils\wandb_logging\wandb_utils.py" />
+    <Compile Include="utils\wandb_logging\__init__.py" />
+    <Compile Include="utils\__init__.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="data\" />
+    <Folder Include="data\images" />
+    <Folder Include="models" />
+    <Folder Include="runs\" />
+    <Folder Include="runs\detect\" />
+    <Folder Include="runs\detect\exp\" />
+    <Folder Include="runs\train\" />
+    <Folder Include="runs\train\exp\" />
+    <Folder Include="runs\train\exp\weights\" />
+    <Folder Include="train using\" />
+    <Folder Include="train using\images\" />
+    <Folder Include="train using\images\train\" />
+    <Folder Include="train using\images\val\" />
+    <Folder Include="train using\labels\" />
+    <Folder Include="train using\labels\train\" />
+    <Folder Include="train using\labels\val\" />
+    <Folder Include="utils" />
+    <Folder Include="utils\aws" />
+    <Folder Include="utils\google_app_engine" />
+    <Folder Include="utils\wandb_logging" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="CondaEnv|CondaEnv|yolov5" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>
